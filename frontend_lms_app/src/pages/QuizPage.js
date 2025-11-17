@@ -53,7 +53,7 @@ export default function QuizPage(){
 
   return (
     <Layout title={`${course.title} - Quiz`} subtitle={`Answer ${questions.length} questions`}>
-      {error && <Card><div style={{color:"var(--color-error)"}}>{error}</div></Card>}
+      {error && <Card variant="colored"><div style={{color:"var(--color-error)"}}>{error}</div></Card>}
       {questions.map((q, idx)=>(
         <QuizQuestion key={q.id} question={q} name={`q-${q.id}`} value={answers[q.id]} onChange={(i)=>setAnswer(q.id, i)}/>
       ))}

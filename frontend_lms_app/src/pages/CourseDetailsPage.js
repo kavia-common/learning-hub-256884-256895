@@ -27,7 +27,7 @@ export default function CourseDetailsPage(){
 
   return (
     <Layout title={course.title} subtitle={course.shortDescription}>
-      <div className="card mb16">
+      <div className="panel mb16">
         <div className="card-body">
           <img src={course.thumbnail} alt={`${course.title} thumbnail`} style={{width:"100%", borderRadius:10, marginBottom:12}}/>
           <div style={{minWidth:240}}>
@@ -40,7 +40,7 @@ export default function CourseDetailsPage(){
         </div>
       </div>
 
-      <div className="card">
+      <div className="tinted">
         <div className="card-body">
           <div style={{fontWeight:800, marginBottom:8}}>Lessons</div>
           {course.lessons.map((l, idx)=>(

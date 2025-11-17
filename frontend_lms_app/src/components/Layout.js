@@ -18,9 +18,9 @@ export default function Layout({ children, title, subtitle }) {
 
   return (
     <div className="layout">
-      <aside className="sidebar">
+      <aside className="sidebar" role="navigation" aria-label="Primary">
         <div className="brand">
-          <div className="logo">LH</div>
+          <div className="logo" aria-hidden>LH</div>
           <div>
             <div style={{fontWeight:800}}>Learning Hub</div>
             <div className="small">Ocean Professional</div>
@@ -39,8 +39,8 @@ export default function Layout({ children, title, subtitle }) {
         </div>
       </aside>
       <div className="content">
-        <div className="topbar">
-          <div>
+        <div className="topbar" role="banner">
+          <div className="hero" style={{padding:12, background:"transparent", boxShadow:"none"}}>
             {title && <h1 className="heading m0">{title}</h1>}
             {subtitle && <p className="subheading m0">{subtitle}</p>}
           </div>
@@ -48,7 +48,7 @@ export default function Layout({ children, title, subtitle }) {
             <span className="badge info">{user?.email || "user@example.com"}</span>
           </div>
         </div>
-        <main className="page">
+        <main className="page surface-alt">
           {children}
         </main>
       </div>

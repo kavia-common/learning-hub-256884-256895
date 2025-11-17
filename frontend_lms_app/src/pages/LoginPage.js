@@ -25,7 +25,7 @@ export default function LoginPage(){
   return (
     <div className="container">
       <div className="grid" style={{gridTemplateColumns:"1fr", maxWidth:520, margin:"40px auto"}}>
-        <Card title="Welcome back" subtitle="Sign in to continue your learning">
+        <Card variant="colored" title="Welcome back" subtitle="Sign in to continue your learning">
           <form onSubmit={onSubmit}>
             <label className="small" htmlFor="name">Full Name</label>
             <input id="name" className="input mb12" value={name} onChange={e=>setName(e.target.value)} placeholder="Jane Doe" aria-label="Full Name"/>

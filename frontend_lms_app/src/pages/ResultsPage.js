@@ -45,7 +45,7 @@ export default function ResultsPage(){
       )}
 
       <h2 className="heading mt24">History</h2>
-      <div className="card">
+      <div className="surface mt16" style={{overflowX:"auto"}}>
         <table className="table">
           <thead>
             <tr><th>Course</th><th>Score</th><th>Date</th><th>Action</th></tr>

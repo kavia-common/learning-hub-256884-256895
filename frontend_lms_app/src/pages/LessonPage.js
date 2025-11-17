@@ -48,7 +48,7 @@ export default function LessonPage(){
             <div className="small">Video</div>
             <Badge kind={completed ? "success" : "info"}>{completed ? "Completed" : "In progress"}</Badge>
           </div>
-          <div className="mt12" style={{background:"var(--surface-muted)", border:"1px dashed var(--border)", padding:16, borderRadius:10}}>
+          <div className="mt12 surface-alt" style={{border:"1px dashed var(--border)", padding:16, borderRadius:10}}>
             <div className="small">Video placeholder</div>
             <a href={lesson.videoUrl} target="_blank" rel="noreferrer">Open external video link</a>
           </div>
