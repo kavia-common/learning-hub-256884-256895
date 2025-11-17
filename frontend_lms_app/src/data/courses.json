@@ -1,0 +1,310 @@
+{
+  "courses": [
+    {
+      "id": "webdev",
+      "title": "Web Development Basics",
+      "thumbnail": "/images/course_webdev.svg",
+      "shortDescription": "Learn the foundations of the modern web: HTML, CSS, and JavaScript.",
+      "totalLessons": 6,
+      "lessons": [
+        {
+          "id": "html-intro",
+          "title": "Introduction to HTML",
+          "description": "Understand the structure of web pages.",
+          "videoUrl": "https://example.com/video/html-intro",
+          "content": [
+            "HTML is the standard markup language that structures content on the web. It uses elements such as headings, paragraphs, lists, and links to describe how information is organized.",
+            "Each HTML element is represented by tags, often with attributes that provide additional context—like alt text for images. A well-structured HTML document improves accessibility and search engine visibility.",
+            "Modern development pairs semantic HTML with ARIA roles to support assistive technologies and create inclusive experiences."
+          ],
+          "keyTakeaways": [
+            "HTML defines the structure of content",
+            "Semantic elements communicate meaning",
+            "Accessibility starts with good markup"
+          ]
+        },
+        {
+          "id": "css-basics",
+          "title": "CSS Basics",
+          "description": "Style content with cascading style sheets.",
+          "videoUrl": "https://example.com/video/css-basics",
+          "content": [
+            "CSS controls presentation—colors, spacing, and layout. Styles cascade, meaning more specific selectors can override earlier ones.",
+            "Modern layout techniques include Flexbox and Grid, which simplify building responsive interfaces across devices.",
+            "Using variables and utility classes can standardize your design system and reduce duplication."
+          ],
+          "keyTakeaways": [
+            "CSS handles presentation and layout",
+            "Flexbox and Grid enable responsive design",
+            "Variables make themes consistent"
+          ]
+        },
+        {
+          "id": "js-fundamentals",
+          "title": "JavaScript Fundamentals",
+          "description": "Make pages interactive with JavaScript.",
+          "videoUrl": "https://example.com/video/js-fundamentals",
+          "content": [
+            "JavaScript adds interactivity and dynamic behavior to web pages. It manipulates the DOM and communicates with servers via APIs.",
+            "Key language features include variables, functions, loops, and objects. ES6 introduced let/const, arrow functions, and modules.",
+            "Understanding event handling and the asynchronous model (Promises, async/await) is essential for modern applications."
+          ],
+          "keyTakeaways": [
+            "JavaScript drives interactivity",
+            "ES6 features improve readability",
+            "Async programming is foundational"
+          ]
+        },
+        {
+          "id": "version-control",
+          "title": "Version Control with Git",
+          "description": "Track changes and collaborate using Git.",
+          "videoUrl": "https://example.com/video/git",
+          "content": [
+            "Git enables teams to manage changes through commits and branches. It supports experimentation without disrupting the main codebase.",
+            "Workflows like feature branches and pull requests add structure and facilitate peer review.",
+            "Writing clear commit messages and using .gitignore helps maintain a clean history."
+          ],
+          "keyTakeaways": [
+            "Git tracks changes over time",
+            "Branches enable safe experimentation",
+            "Clear commit messages matter"
+          ]
+        },
+        {
+          "id": "deploy-basics",
+          "title": "Deployment Basics",
+          "description": "Get your site live on the internet.",
+          "videoUrl": "https://example.com/video/deploy",
+          "content": [
+            "Deployment moves code from a local environment to production. Static sites can be hosted on CDNs for fast global delivery.",
+            "Build steps like minification and bundling reduce payload size and improve performance.",
+            "Monitoring and error reporting help maintain reliability after release."
+          ],
+          "keyTakeaways": [
+            "Deployment delivers value to users",
+            "Build optimizations improve speed",
+            "Monitoring ensures reliability"
+          ]
+        },
+        {
+          "id": "accessibility",
+          "title": "Web Accessibility",
+          "description": "Design inclusive and accessible experiences.",
+          "videoUrl": "https://example.com/video/a11y",
+          "content": [
+            "Accessibility ensures that people with disabilities can use your website. This includes keyboard navigation, screen reader support, and sufficient color contrast.",
+            "Semantic HTML and ARIA roles provide structure and meaning to assistive technologies.",
+            "Continuous testing with tools and real users improves outcomes."
+          ],
+          "keyTakeaways": [
+            "Accessibility is a core requirement",
+            "Semantics and ARIA aid assistive tech",
+            "Test early and often"
+          ]
+        }
+      ],
+      "quiz": [
+        {"id":"q1","question":"What does HTML stand for?","options":["Hyperlinks and Text Markup Language","HyperText Markup Language","Home Tool Markup Language","Hyper Transfer Mark Language"],"correctIndex":1},
+        {"id":"q2","question":"Which CSS layout is best for one‑dimensional alignment?","options":["Floats","Flexbox","Grid","Position absolute"],"correctIndex":1},
+        {"id":"q3","question":"const creates:","options":["A mutable variable","A block‑scoped immutable binding","A function","A global var"],"correctIndex":1},
+        {"id":"q4","question":"Which command creates a new Git branch?","options":["git new branch","git branch <name>","git create <name>","git make <name>"],"correctIndex":1},
+        {"id":"q5","question":"Minification primarily:","options":["Improves SEO","Reduces file size","Increases security","Changes semantics"],"correctIndex":1},
+        {"id":"q6","question":"ARIA roles help with:","options":["Performance","Accessibility","Styling","SEO only"],"correctIndex":1},
+        {"id":"q7","question":"Which is not a semantic tag?","options":["<article>","<section>","<div>","<nav>"],"correctIndex":2},
+        {"id":"q8","question":"Which is true about async/await?","options":["Blocks the thread","Built on Promises","Replaces events","Only for Node.js"],"correctIndex":1},
+        {"id":"q9","question":"CDNs primarily help by:","options":["Storing cookies","Serving content closer to users","Encrypting data","Writing tests"],"correctIndex":1},
+        {"id":"q10","question":"Good commit messages should:","options":["Be vague","Describe why and what","Include secrets","Use random emojis"],"correctIndex":1}
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "Introduction to AI",
+      "thumbnail": "/images/course_ai.svg",
+      "shortDescription": "Explore core concepts in artificial intelligence, from search to neural networks.",
+      "totalLessons": 5,
+      "lessons": [
+        {
+          "id": "ai-overview",
+          "title": "AI Landscape",
+          "description": "What AI is and where it’s used.",
+          "videoUrl": "https://example.com/video/ai-overview",
+          "content": [
+            "Artificial Intelligence is a broad field focused on building systems that can perform tasks requiring human intelligence. Examples include vision, speech, recommendation, and decision support.",
+            "AI techniques span rule-based systems to machine learning and deep learning. Organizations choose approaches based on data availability and problem complexity."
+          ],
+          "keyTakeaways": [
+            "AI is an umbrella of techniques",
+            "Applications are ubiquitous",
+            "Data drives ML approaches"
+          ]
+        },
+        {
+          "id": "search-planning",
+          "title": "Search and Planning",
+          "description": "Agents that make goal-directed decisions.",
+          "videoUrl": "https://example.com/video/search",
+          "content": [
+            "Classical AI studied agents that search problem spaces to reach goals. Algorithms such as BFS, DFS, and A* trade off completeness, optimality, and efficiency.",
+            "Planning introduces actions with preconditions and effects, allowing agents to sequence steps under constraints."
+          ],
+          "keyTakeaways": [
+            "Search explores states",
+            "A* uses heuristics",
+            "Planning sequences actions"
+          ]
+        },
+        {
+          "id": "ml-basics",
+          "title": "Machine Learning Basics",
+          "description": "Learning patterns from data.",
+          "videoUrl": "https://example.com/video/ml",
+          "content": [
+            "Machine Learning models learn patterns from examples. Supervised learning maps inputs to outputs, unsupervised finds structure, and reinforcement learning optimizes behavior.",
+            "Key concerns include bias, variance, and generalization. Cross-validation helps estimate model performance on unseen data."
+          ],
+          "keyTakeaways": [
+            "Supervised vs unsupervised vs RL",
+            "Generalization is the goal",
+            "Validation prevents overfitting"
+          ]
+        },
+        {
+          "id": "nn-intro",
+          "title": "Neural Networks",
+          "description": "From perceptrons to deep networks.",
+          "videoUrl": "https://example.com/video/nn",
+          "content": [
+            "Neural networks compose layers of units to approximate complex functions. Backpropagation tunes parameters to reduce loss.",
+            "Deep architectures, GPUs, and large datasets enabled breakthroughs in vision and language over the last decade."
+          ],
+          "keyTakeaways": [
+            "Backprop powers learning",
+            "Depth increases capacity",
+            "Compute and data are enablers"
+          ]
+        },
+        {
+          "id": "ai-ethics",
+          "title": "AI Ethics & Responsible AI",
+          "description": "Fairness, privacy, and accountability.",
+          "videoUrl": "https://example.com/video/ethics",
+          "content": [
+            "Responsible AI seeks to mitigate harm and ensure benefits are distributed equitably. Key areas include fairness, transparency, privacy, and safety.",
+            "Governance frameworks, documentation, and human-in-the-loop reviews support responsible deployment."
+          ],
+          "keyTakeaways": [
+            "Responsible AI is essential",
+            "Governance reduces risk",
+            "Transparency builds trust"
+          ]
+        }
+      ],
+      "quiz": [
+        {"id":"q1","question":"A* search uses:","options":["No heuristic","Random exploration","Heuristic + cost","Only depth"],"correctIndex":2},
+        {"id":"q2","question":"Supervised learning trains on:","options":["Unlabeled data","Rewards only","Labeled examples","Rules only"],"correctIndex":2},
+        {"id":"q3","question":"Backpropagation updates:","options":["Inputs","Weights","Labels","Hardware"],"correctIndex":1},
+        {"id":"q4","question":"Bias in datasets can:","options":["Improve fairness","Be ignored safely","Lead to unfair outcomes","Guarantee accuracy"],"correctIndex":2},
+        {"id":"q5","question":"Reinforcement learning optimizes:","options":["Static labels","Heuristics","Cumulative reward","HTML"],"correctIndex":2},
+        {"id":"q6","question":"k-means is:","options":["Classification","Clustering","Regression","Planning"],"correctIndex":1},
+        {"id":"q7","question":"GPU acceleration helps by:","options":["Reducing data needs","Faster parallel compute","Fixing bias","Improving interpretability"],"correctIndex":1},
+        {"id":"q8","question":"Privacy protection includes:","options":["Encryption","Ignoring consent","Leaking PII","Hardcoding secrets"],"correctIndex":0},
+        {"id":"q9","question":"Validation set is used to:","options":["Train final model","Estimate generalization","Store data","Ignore overfitting"],"correctIndex":1}
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Digital Marketing Fundamentals",
+      "thumbnail": "/images/course_marketing.svg",
+      "shortDescription": "Learn channels, content strategy, analytics, and optimization.",
+      "totalLessons": 5,
+      "lessons": [
+        {
+          "id": "dm-overview",
+          "title": "Digital Marketing Overview",
+          "description": "The ecosystem of channels and tactics.",
+          "videoUrl": "https://example.com/video/dm-overview",
+          "content": [
+            "Digital marketing spans search, social, email, content, and paid media. The mix depends on audience, goals, and budget.",
+            "A clear value proposition and consistent messaging across channels increases conversion and brand trust."
+          ],
+          "keyTakeaways": [
+            "Multi-channel discipline",
+            "Messaging consistency matters",
+            "Measure what matters"
+          ]
+        },
+        {
+          "id": "seo-basics",
+          "title": "SEO Basics",
+          "description": "Improve discoverability via search.",
+          "videoUrl": "https://example.com/video/seo",
+          "content": [
+            "SEO optimizes content and site structure so search engines can crawl and rank pages effectively.",
+            "Keyword research, technical health, and quality content are the core pillars."
+          ],
+          "keyTakeaways": [
+            "Technical + content + backlinks",
+            "Intent-driven keywords",
+            "Performance impacts rankings"
+          ]
+        },
+        {
+          "id": "content-strategy",
+          "title": "Content Strategy",
+          "description": "Create useful, audience-first content.",
+          "videoUrl": "https://example.com/video/content",
+          "content": [
+            "Content should address user needs at different funnel stages—awareness, consideration, decision.",
+            "Editorial calendars and distribution plans sustain momentum and keep teams aligned."
+          ],
+          "keyTakeaways": [
+            "Map content to funnel",
+            "Plan cadence and formats",
+            "Repurpose across channels"
+          ]
+        },
+        {
+          "id": "paid-ads",
+          "title": "Paid Advertising",
+          "description": "Reach targeted audiences at scale.",
+          "videoUrl": "https://example.com/video/ads",
+          "content": [
+            "Paid campaigns on search and social offer granular targeting and rapid experimentation.",
+            "Creative testing and landing page alignment are critical for ROI."
+          ],
+          "keyTakeaways": [
+            "Test creative and audiences",
+            "Align ads with landing pages",
+            "Track conversions accurately"
+          ]
+        },
+        {
+          "id": "analytics",
+          "title": "Analytics & Optimization",
+          "description": "Use data to improve outcomes.",
+          "videoUrl": "https://example.com/video/analytics",
+          "content": [
+            "Analytics tools measure behavior and outcomes. KPIs vary by strategy: CTR, conversion rate, CAC, and LTV are common.",
+            "A/B testing iterates toward better performance with evidence."
+          ],
+          "keyTakeaways": [
+            "Define KPIs per goal",
+            "A/B testing informs decisions",
+            "Data literacy improves impact"
+          ]
+        }
+      ],
+      "quiz": [
+        {"id":"q1","question":"SEO primarily improves:","options":["Paid reach","Organic discoverability","Email deliverability","App ratings"],"correctIndex":1},
+        {"id":"q2","question":"A/B testing compares:","options":["Two variants","Many channels","Only audiences","Unrelated metrics"],"correctIndex":0},
+        {"id":"q3","question":"Content should map to:","options":["Budget cycles","Sales funnel stages","Random topics","Internal jargon"],"correctIndex":1},
+        {"id":"q4","question":"Paid ads success depends on:","options":["Creative + targeting + landing pages","Random spend","Ignoring analytics","No experimentation"],"correctIndex":0},
+        {"id":"q5","question":"CAC stands for:","options":["Customer Acquisition Cost","Click Accuracy Count","Campaign Average Cost","Content And Copy"],"correctIndex":0},
+        {"id":"q6","question":"LTV stands for:","options":["Lead To Value","Lifetime Value","Long-term Views","List Traffic Volume"],"correctIndex":1},
+        {"id":"q7","question":"Consistent messaging helps:","options":["Confuse users","Build trust","Reduce reach","Break funnels"],"correctIndex":1},
+        {"id":"q8","question":"Conversion tracking ensures:","options":["Privacy leaks","No insights","Measurable outcomes","Random results"],"correctIndex":2}
+      ]
+    }
+  ]
+}

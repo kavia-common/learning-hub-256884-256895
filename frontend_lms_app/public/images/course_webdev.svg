@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f9fafb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad)"/>
+  <rect x="60" y="60" rx="24" ry="24" width="1080" height="510" fill="#ffffff" opacity="0.9"/>
+  <text x="120" y="200" font-size="120" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#2563EB">WD</text>
+  <text x="120" y="280" font-size="36" font-family="Arial, Helvetica, sans-serif" fill="#111827">Web Development Basics</text>
+  <circle cx="1000" cy="160" r="70" fill="#F59E0B" opacity="0.2"/>
+  <circle cx="1030" cy="210" r="30" fill="#2563EB" opacity="0.2"/>
+</svg>

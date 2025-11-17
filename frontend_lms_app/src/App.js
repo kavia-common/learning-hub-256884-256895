@@ -1,48 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./css/theme.css";
+import "./index.css";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import DashboardPage from "./pages/DashboardPage";
+import CoursesPage from "./pages/CoursesPage";
+import CourseDetailsPage from "./pages/CourseDetailsPage";
+import LessonPage from "./pages/LessonPage";
+import QuizPage from "./pages/QuizPage";
+import ResultsPage from "./pages/ResultsPage";
+import PrivateRoute from "./js/PrivateRoute";
 
-// PUBLIC_INTERFACE
-function App() {
-  const [theme, setTheme] = useState('light');
-
-  // Effect to apply theme to document element
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
-  // PUBLIC_INTERFACE
-  const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
-  };
-
+/** PUBLIC_INTERFACE
+ * App entry with routing
+ */
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <button 
-          className="theme-toggle" 
-          onClick={toggleTheme}
-          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        >
-          {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
-        </button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          Current theme: <strong>{theme}</strong>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<LoginPage/>} />
+        <Route path="/register" element={<RegisterPage/>} />
+        <Route path="/" element={<PrivateRoute><DashboardPage/></PrivateRoute>} />
+        <Route path="/courses" element={<PrivateRoute><CoursesPage/></PrivateRoute>} />
+        <Route path="/courses/:courseId" element={<PrivateRoute><CourseDetailsPage/></PrivateRoute>} />
+        <Route path="/courses/:courseId/lessons/:lessonId" element={<PrivateRoute><LessonPage/></PrivateRoute>} />
+        <Route path="/courses/:courseId/quiz" element={<PrivateRoute><QuizPage/></PrivateRoute>} />
+        <Route path="/results" element={<PrivateRoute><ResultsPage/></PrivateRoute>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
