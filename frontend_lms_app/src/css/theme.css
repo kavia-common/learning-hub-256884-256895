@@ -55,6 +55,8 @@
   /* Darker pink than the topbar/dashboard pink for contrast (approx 12-15% darker) */
   --color-email-pill-bg: #E5E7EB; /* light gray for email pill background */
   --color-email-pill-text: #FFFFFF; /* keep text white as requested */
+  /* Highlight for the email text content within the pill for readability */
+  --color-email-text: #BE185D; /* rose-700, strong contrast on light gray bg */
 
   --color-logout-bg: #F28C38; /* warm orange primary */
   --color-logout-text: #FFFFFF;
@@ -245,6 +247,11 @@ a:visited{color:#7B61FF}
 }
 .badge.success{ background: var(--color-success); color: var(--text-inverse); border-color: transparent }
 .badge.info{ background: var(--color-email-pill-bg); color: var(--color-email-pill-text); border-color: transparent }
+/* Only color the email text content within the email pill. If text nodes are not wrapped,
+   the child selector ensures spans (or wrappers) inside can take the highlight color. */
+.badge.info .email-text{
+  color: var(--color-email-text);
+}
 .badge.error{ background: var(--color-error); color: var(--text-inverse); border-color: transparent }
 .badge.warning{ background: var(--color-warning); color: var(--on-surface); border-color: transparent }
 .badge.neutral{ background: #F0E9FF; color: var(--muted); border-color: #E5E8F0 }

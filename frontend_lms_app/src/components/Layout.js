@@ -45,7 +45,7 @@ export default function Layout({ children, title, subtitle }) {
             {subtitle && <p className="subheading m0">{subtitle}</p>}
           </div>
           <div className="row">
-            <span className="badge info">{user?.email || "user@example.com"}</span>
+            <span className="badge info"><span className="email-text">{user?.email || "user@example.com"}</span></span>
           </div>
         </div>
         <main className="page surface-alt">
