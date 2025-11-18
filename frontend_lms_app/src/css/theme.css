@@ -50,6 +50,17 @@
   --gradient-bg-soft: radial-gradient(120% 120% at 10% 10%, #F3F6FF 0%, #FAF7FF 60%, #FFFFFF 100%);
   --gradient-overlay: radial-gradient(60% 80% at 80% 20%, rgba(255,79,214,0.08) 0%, rgba(34,224,192,0.06) 40%, rgba(45,174,240,0.08) 100%);
   --gradient-button-accent: linear-gradient(90deg, #1593D6 0%, #F06BCF 100%);
+
+  /* Accessibility tokens for email pill and logout button */
+  --color-email-pill-bg: #4F8A8B; /* default teal blue */
+  --color-email-pill-text: #FFFFFF;
+
+  --color-logout-bg: #F28C38; /* warm orange primary */
+  --color-logout-text: #FFFFFF;
+
+  /* Optional variant for logout button */
+  --color-logout-variant-bg: #B56576; /* dusty rose */
+  --color-logout-variant-text: #FFFFFF;
 }
 
 *{box-sizing:border-box}
@@ -198,6 +209,28 @@ a:visited{color:#7B61FF}
   background: var(--gradient-button-accent); color: var(--text-inverse); border: 1px solid transparent;
 }
 
+/* Accessible Logout button styling (keeps spacing/shape via .btn) */
+.btn.logout {
+  background: var(--color-logout-bg);
+  color: var(--color-logout-text);
+  border-color: transparent;
+}
+.btn.logout:hover {
+  /* slightly darken for hover while maintaining contrast */
+  background: #e58031; /* ~8% darker than #F28C38 */
+}
+.btn.logout:active {
+  background: #d6732c; /* further darken for active */
+}
+
+/* Optional theme variant for logout */
+.btn.logout.variant {
+  background: var(--color-logout-variant-bg);
+  color: var(--color-logout-variant-text);
+}
+.btn.logout.variant:hover { background: #a45867; }
+.btn.logout.variant:active { background: #944d5c; }
+
 /* Inputs */
 .input, .select{
   width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background: var(--surface); color: var(--on-surface);
@@ -210,7 +243,7 @@ a:visited{color:#7B61FF}
   color: var(--muted);
 }
 .badge.success{ background: var(--color-success); color: var(--text-inverse); border-color: transparent }
-.badge.info{ background: var(--color-info); color: var(--text-inverse); border-color: transparent }
+.badge.info{ background: var(--color-email-pill-bg); color: var(--color-email-pill-text); border-color: transparent }
 .badge.error{ background: var(--color-error); color: var(--text-inverse); border-color: transparent }
 .badge.warning{ background: var(--color-warning); color: var(--on-surface); border-color: transparent }
 .badge.neutral{ background: #F0E9FF; color: var(--muted); border-color: #E5E8F0 }

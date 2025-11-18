@@ -35,7 +35,7 @@ export default function Layout({ children, title, subtitle }) {
         <div className="small">Logged in as</div>
         <div className="mt8" style={{fontWeight:700}}>{user?.name || "Guest"}</div>
         <div className="mt16">
-          <Button variant="ghost" onClick={handleLogout} ariaLabel="Log out">Logout</Button>
+          <button className="btn logout" onClick={handleLogout} aria-label="Log out">Logout</button>
         </div>
       </aside>
       <div className="content">
