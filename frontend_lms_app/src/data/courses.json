@@ -227,6 +227,15 @@
           "id": "ai-ethics",
           "title": "AI Ethics & Responsible AI",
           "description": "Fairness, privacy, and accountability.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "AI Ethics and Responsible AI - Video",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=6yDr7CWLJ8c"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=6yDr7CWLJ8c",
           "content": [
             "Responsible AI seeks to mitigate harm and ensure benefits are distributed equitably. Key areas include fairness, transparency, privacy, and safety.",
             "Governance frameworks, documentation, and human-in-the-loop reviews support responsible deployment."
