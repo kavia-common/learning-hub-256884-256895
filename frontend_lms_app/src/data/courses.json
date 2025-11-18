@@ -339,6 +339,15 @@
           "id": "paid-ads",
           "title": "Paid Advertising",
           "description": "Reach targeted audiences at scale.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "Paid Advertising - Video",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=ol0v779BlAA"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=ol0v779BlAA",
           "content": [
             "Paid campaigns on search and social offer granular targeting and rapid experimentation.",
             "Creative testing and landing page alignment are critical for ROI."
