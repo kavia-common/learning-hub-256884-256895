@@ -316,6 +316,15 @@
           "id": "content-strategy",
           "title": "Content Strategy",
           "description": "Create useful, audience-first content.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "Content Strategy Essentials - Audience, Value, and Planning",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=TkskQD1Lt4A"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=TkskQD1Lt4A",
           "content": [
             "Content should address user needs at different funnel stages—awareness, consideration, decision.",
             "Editorial calendars and distribution plans sustain momentum and keep teams aligned."
