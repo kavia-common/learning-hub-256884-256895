@@ -97,6 +97,7 @@
           "id": "accessibility",
           "title": "Web Accessibility",
           "description": "Design inclusive and accessible experiences.",
+          "videoUrl": "https://www.youtube.com/watch?v=z8xUCzToff8",
           "content": [
             "Accessibility ensures that people with disabilities can use your website. This includes keyboard navigation, screen reader support, and sufficient color contrast.",
             "Semantic HTML and ARIA roles provide structure and meaning to assistive technologies.",
