@@ -40,6 +40,44 @@ export default function LessonPage(){
   const next = getNextLesson(course, lesson.id);
   const prev = getPrevLesson(course, lesson.id);
 
+  // Helper to convert YouTube/watch URLs to privacy-enhanced nocookie embeds
+  const toEmbedSrc = (rawUrl) => {
+    try{
+      const url = new URL(rawUrl);
+      const isYouTube = url.hostname.includes("youtube.com") || url.hostname.includes("youtu.be");
+      if(!isYouTube) return rawUrl;
+      let videoId = "";
+      if (url.hostname.includes("youtu.be")) {
+        videoId = url.pathname.replace("/", "");
+      } else {
+        videoId = url.searchParams.get("v") || "";
+      }
+      return videoId ? `https://www.youtube-nocookie.com/embed/${videoId}` : rawUrl;
+    }catch{
+      return rawUrl;
+    }
+  };
+
+  const renderVideoBlock = (srcUrl) => (
+    <>
+      <div className="small" style={{marginBottom:8}}>Watch: {(() => { try { return new URL(srcUrl).hostname; } catch { return "video"; } })()}</div>
+      <div style={{position:"relative", paddingTop:"56.25%", width:"100%", borderRadius:8, overflow:"hidden", boxShadow:"var(--shadow-md)", background:"var(--surface)"}}>
+        <iframe
+          title={`${lesson.title} video`}
+          src={toEmbedSrc(srcUrl)}
+          style={{position:"absolute", inset:0, width:"100%", height:"100%", border:0}}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          referrerPolicy="strict-origin-when-cross-origin"
+        />
+      </div>
+      <div className="small mt8">
+        Having trouble?{" "}
+        <a href={srcUrl} target="_blank" rel="noreferrer">Open in a new tab</a>
+      </div>
+    </>
+  );
+
   return (
     <Layout title={lesson.title} subtitle={lesson.description}>
       <div className="card mb16">
@@ -49,49 +87,52 @@ export default function LessonPage(){
             <Badge kind={completed ? "success" : "info"}>{completed ? "Completed" : "In progress"}</Badge>
           </div>
           <div className="mt12 surface-alt" style={{border:"1px dashed var(--border)", padding:16, borderRadius:10}}>
-            {lesson.videoUrl ? (
-              <>
-                <div className="small" style={{marginBottom:8}}>Watch: {new URL(lesson.videoUrl).hostname}</div>
-                <div style={{position:"relative", paddingTop:"56.25%", width:"100%", borderRadius:8, overflow:"hidden"}}>
-                  <iframe
-                    title={`${lesson.title} video`}
-                    src={(() => {
-                      try {
-                        const url = new URL(lesson.videoUrl);
-                        // Convert common YouTube watch URL to embed form
-                        if ((url.hostname.includes("youtube.com") || url.hostname.includes("youtu.be"))) {
-                          let videoId = "";
-                          if (url.hostname.includes("youtu.be")) {
-                            videoId = url.pathname.replace("/", "");
-                          } else {
-                            videoId = url.searchParams.get("v") || "";
-                          }
-                          const embedBase = "https://www.youtube.com/embed/";
-                          return videoId ? `${embedBase}${videoId}` : lesson.videoUrl;
-                        }
-                        return lesson.videoUrl;
-                      } catch {
-                        return lesson.videoUrl;
-                      }
-                    })()}
-                    style={{position:"absolute", inset:0, width:"100%", height:"100%", border:0}}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  />
-                </div>
-                <div className="small mt8">
-                  Having trouble?{" "}
-                  <a href={lesson.videoUrl} target="_blank" rel="noreferrer">Open in a new tab</a>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="small">Video not available</div>
-              </>
-            )}
+            {lesson.videoUrl
+              ? renderVideoBlock(lesson.videoUrl)
+              : (
+                <>
+                  <div className="small">Video not available</div>
+                </>
+              )
+            }
           </div>
         </div>
       </div>
+
+      {Array.isArray(lesson.resources) && lesson.resources.length > 0 && (
+        <div className="card mb16">
+          <div className="card-body">
+            <div style={{fontWeight:800, marginBottom:8}}>Resources</div>
+            <ul className="m0">
+              {lesson.resources.map((r, idx) => {
+                const isVideo = String(r.type).toLowerCase() === "video";
+                const provider = r.provider || (r.url ? (()=>{ try{ return new URL(r.url).hostname; }catch{ return ""; } })() : "");
+                return (
+                  <li key={idx} className="mb12">
+                    <div className="row" style={{justifyContent:"space-between", alignItems:"flex-start"}}>
+                      <div>
+                        <div style={{fontWeight:700}}>
+                          {isVideo ? "🎬 " : ""}{r.title || "Resource"}
+                        </div>
+                        <div className="small">
+                          {provider ? `Provider: ${provider}` : ""}
+                          {isVideo ? " • Type: Video" : ""}
+                        </div>
+                      </div>
+                      <a className="btn ghost" href={r.url} target="_blank" rel="noreferrer">Open</a>
+                    </div>
+                    {isVideo && r.url && (
+                      <div className="mt8 surface-alt" style={{border:"1px dashed var(--border)", padding:12, borderRadius:10}}>
+                        {renderVideoBlock(r.url)}
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      )}
 
       <div className="card mb16">
         <div className="card-body">

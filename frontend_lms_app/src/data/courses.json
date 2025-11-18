@@ -135,6 +135,15 @@
           "id": "ai-overview",
           "title": "AI Landscape",
           "description": "What AI is and where it’s used.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "What is Artificial Intelligence (or Machine Learning)?",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=ad79nYk2keg"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=ad79nYk2keg",
           "content": [
             "Artificial Intelligence is a broad field focused on building systems that can perform tasks requiring human intelligence. Examples include vision, speech, recommendation, and decision support.",
             "AI techniques span rule-based systems to machine learning and deep learning. Organizations choose approaches based on data availability and problem complexity."
