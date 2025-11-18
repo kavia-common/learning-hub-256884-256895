@@ -11,6 +11,7 @@
           "id": "html-intro",
           "title": "Introduction to HTML",
           "description": "Understand the structure of web pages.",
+          "videoUrl": "https://www.youtube.com/watch?v=salY_Sm6mv4",
           "content": [
             "HTML is the standard markup language that structures content on the web. It uses elements such as headings, paragraphs, lists, and links to describe how information is organized.",
             "Each HTML element is represented by tags, often with attributes that provide additional context—like alt text for images. A well-structured HTML document improves accessibility and search engine visibility.",

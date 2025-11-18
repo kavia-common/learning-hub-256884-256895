@@ -49,8 +49,46 @@ export default function LessonPage(){
             <Badge kind={completed ? "success" : "info"}>{completed ? "Completed" : "In progress"}</Badge>
           </div>
           <div className="mt12 surface-alt" style={{border:"1px dashed var(--border)", padding:16, borderRadius:10}}>
-            <div className="small">Video placeholder</div>
-            <a href={lesson.videoUrl} target="_blank" rel="noreferrer">Open external video link</a>
+            {lesson.videoUrl ? (
+              <>
+                <div className="small" style={{marginBottom:8}}>Watch: {new URL(lesson.videoUrl).hostname}</div>
+                <div style={{position:"relative", paddingTop:"56.25%", width:"100%", borderRadius:8, overflow:"hidden"}}>
+                  <iframe
+                    title={`${lesson.title} video`}
+                    src={(() => {
+                      try {
+                        const url = new URL(lesson.videoUrl);
+                        // Convert common YouTube watch URL to embed form
+                        if ((url.hostname.includes("youtube.com") || url.hostname.includes("youtu.be"))) {
+                          let videoId = "";
+                          if (url.hostname.includes("youtu.be")) {
+                            videoId = url.pathname.replace("/", "");
+                          } else {
+                            videoId = url.searchParams.get("v") || "";
+                          }
+                          const embedBase = "https://www.youtube.com/embed/";
+                          return videoId ? `${embedBase}${videoId}` : lesson.videoUrl;
+                        }
+                        return lesson.videoUrl;
+                      } catch {
+                        return lesson.videoUrl;
+                      }
+                    })()}
+                    style={{position:"absolute", inset:0, width:"100%", height:"100%", border:0}}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="small mt8">
+                  Having trouble?{" "}
+                  <a href={lesson.videoUrl} target="_blank" rel="noreferrer">Open in a new tab</a>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="small">Video not available</div>
+              </>
+            )}
           </div>
         </div>
       </div>
