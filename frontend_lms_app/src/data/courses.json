@@ -204,6 +204,15 @@
           "id": "nn-intro",
           "title": "Neural Networks",
           "description": "From perceptrons to deep networks.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "Neural Networks - Video",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=jmmW0F0biz0"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=jmmW0F0biz0",
           "content": [
             "Neural networks compose layers of units to approximate complex functions. Backpropagation tunes parameters to reduce loss.",
             "Deep architectures, GPUs, and large datasets enabled breakthroughs in vision and language over the last decade."
