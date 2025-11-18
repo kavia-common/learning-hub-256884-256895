@@ -53,7 +53,7 @@
 
   /* Accessibility tokens for email pill and logout button */
   /* Darker pink than the topbar/dashboard pink for contrast (approx 12-15% darker) */
-  --color-email-pill-bg: #DB2777; /* darker pink for email pill */
+  --color-email-pill-bg: #E11D48; /* lighter vibrant pink (harmonizes with dashboard), AA-compliant on white text */
   --color-email-pill-text: #FFFFFF;
 
   --color-logout-bg: #F28C38; /* warm orange primary */
