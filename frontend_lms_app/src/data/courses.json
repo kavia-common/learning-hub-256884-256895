@@ -43,6 +43,7 @@
           "id": "js-fundamentals",
           "title": "JavaScript Fundamentals",
           "description": "Make pages interactive with JavaScript.",
+          "videoUrl": "https://www.youtube.com/watch?v=c-I5S_zTwAc",
           "content": [
             "JavaScript adds interactivity and dynamic behavior to web pages. It manipulates the DOM and communicates with servers via APIs.",
             "Key language features include variables, functions, loops, and objects. ES6 introduced let/const, arrow functions, and modules.",
