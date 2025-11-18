@@ -27,6 +27,7 @@
           "id": "css-basics",
           "title": "CSS Basics",
           "description": "Style content with cascading style sheets.",
+          "videoUrl": "https://www.youtube.com/watch?v=Z4pCqK-V_Wo",
           "content": [
             "CSS controls presentation—colors, spacing, and layout. Styles cascade, meaning more specific selectors can override earlier ones.",
             "Modern layout techniques include Flexbox and Grid, which simplify building responsive interfaces across devices.",
