@@ -181,6 +181,15 @@
           "id": "ml-basics",
           "title": "Machine Learning Basics",
           "description": "Learning patterns from data.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "Machine Learning Basics - Video",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=ukzFI9rgwfU"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=ukzFI9rgwfU",
           "content": [
             "Machine Learning models learn patterns from examples. Supervised learning maps inputs to outputs, unsupervised finds structure, and reinforcement learning optimizes behavior.",
             "Key concerns include bias, variance, and generalization. Cross-validation helps estimate model performance on unseen data."
