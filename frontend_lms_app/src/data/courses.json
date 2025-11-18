@@ -11,7 +11,7 @@
           "id": "html-intro",
           "title": "Introduction to HTML",
           "description": "Understand the structure of web pages.",
-          "videoUrl": "https://example.com/video/html-intro",
+          "videoUrl": "https://www.youtube.com/watch?v=pQN-pnXPaVg",
           "content": [
             "HTML is the standard markup language that structures content on the web. It uses elements such as headings, paragraphs, lists, and links to describe how information is organized.",
             "Each HTML element is represented by tags, often with attributes that provide additional context—like alt text for images. A well-structured HTML document improves accessibility and search engine visibility.",
@@ -27,7 +27,7 @@
           "id": "css-basics",
           "title": "CSS Basics",
           "description": "Style content with cascading style sheets.",
-          "videoUrl": "https://example.com/video/css-basics",
+          "videoUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
           "content": [
             "CSS controls presentation—colors, spacing, and layout. Styles cascade, meaning more specific selectors can override earlier ones.",
             "Modern layout techniques include Flexbox and Grid, which simplify building responsive interfaces across devices.",
@@ -43,7 +43,7 @@
           "id": "js-fundamentals",
           "title": "JavaScript Fundamentals",
           "description": "Make pages interactive with JavaScript.",
-          "videoUrl": "https://example.com/video/js-fundamentals",
+          "videoUrl": "https://www.youtube.com/watch?v=W6NZfCO5SIk",
           "content": [
             "JavaScript adds interactivity and dynamic behavior to web pages. It manipulates the DOM and communicates with servers via APIs.",
             "Key language features include variables, functions, loops, and objects. ES6 introduced let/const, arrow functions, and modules.",
@@ -59,7 +59,7 @@
           "id": "version-control",
           "title": "Version Control with Git",
           "description": "Track changes and collaborate using Git.",
-          "videoUrl": "https://example.com/video/git",
+          "videoUrl": "https://www.youtube.com/watch?v=Zftx68K-1D4",
           "content": [
             "Git enables teams to manage changes through commits and branches. It supports experimentation without disrupting the main codebase.",
             "Workflows like feature branches and pull requests add structure and facilitate peer review.",
@@ -75,7 +75,7 @@
           "id": "deploy-basics",
           "title": "Deployment Basics",
           "description": "Get your site live on the internet.",
-          "videoUrl": "https://example.com/video/deploy",
+          "videoUrl": "https://www.youtube.com/watch?v=ysEN5RaKOlA",
           "content": [
             "Deployment moves code from a local environment to production. Static sites can be hosted on CDNs for fast global delivery.",
             "Build steps like minification and bundling reduce payload size and improve performance.",
@@ -91,7 +91,7 @@
           "id": "accessibility",
           "title": "Web Accessibility",
           "description": "Design inclusive and accessible experiences.",
-          "videoUrl": "https://example.com/video/a11y",
+          "videoUrl": "https://www.youtube.com/watch?v=ysEN5RaKOlA",
           "content": [
             "Accessibility ensures that people with disabilities can use your website. This includes keyboard navigation, screen reader support, and sufficient color contrast.",
             "Semantic HTML and ARIA roles provide structure and meaning to assistive technologies.",
@@ -128,7 +128,7 @@
           "id": "ai-overview",
           "title": "AI Landscape",
           "description": "What AI is and where it’s used.",
-          "videoUrl": "https://example.com/video/ai-overview",
+          "videoUrl": "https://www.youtube.com/watch?v=2ePf9rue1Ao",
           "content": [
             "Artificial Intelligence is a broad field focused on building systems that can perform tasks requiring human intelligence. Examples include vision, speech, recommendation, and decision support.",
             "AI techniques span rule-based systems to machine learning and deep learning. Organizations choose approaches based on data availability and problem complexity."
@@ -143,7 +143,7 @@
           "id": "search-planning",
           "title": "Search and Planning",
           "description": "Agents that make goal-directed decisions.",
-          "videoUrl": "https://example.com/video/search",
+          "videoUrl": "https://www.youtube.com/watch?v=ad79nYk2keg",
           "content": [
             "Classical AI studied agents that search problem spaces to reach goals. Algorithms such as BFS, DFS, and A* trade off completeness, optimality, and efficiency.",
             "Planning introduces actions with preconditions and effects, allowing agents to sequence steps under constraints."
@@ -158,7 +158,7 @@
           "id": "ml-basics",
           "title": "Machine Learning Basics",
           "description": "Learning patterns from data.",
-          "videoUrl": "https://example.com/video/ml",
+          "videoUrl": "https://www.youtube.com/watch?v=ukzFI9rgwfU",
           "content": [
             "Machine Learning models learn patterns from examples. Supervised learning maps inputs to outputs, unsupervised finds structure, and reinforcement learning optimizes behavior.",
             "Key concerns include bias, variance, and generalization. Cross-validation helps estimate model performance on unseen data."
@@ -173,7 +173,7 @@
           "id": "nn-intro",
           "title": "Neural Networks",
           "description": "From perceptrons to deep networks.",
-          "videoUrl": "https://example.com/video/nn",
+          "videoUrl": "https://www.youtube.com/watch?v=8A7r-cDAwCw",
           "content": [
             "Neural networks compose layers of units to approximate complex functions. Backpropagation tunes parameters to reduce loss.",
             "Deep architectures, GPUs, and large datasets enabled breakthroughs in vision and language over the last decade."
@@ -188,7 +188,7 @@
           "id": "ai-ethics",
           "title": "AI Ethics & Responsible AI",
           "description": "Fairness, privacy, and accountability.",
-          "videoUrl": "https://example.com/video/ethics",
+          "videoUrl": "https://www.youtube.com/watch?v=JMUxmLyrhSk",
           "content": [
             "Responsible AI seeks to mitigate harm and ensure benefits are distributed equitably. Key areas include fairness, transparency, privacy, and safety.",
             "Governance frameworks, documentation, and human-in-the-loop reviews support responsible deployment."
@@ -223,7 +223,7 @@
           "id": "dm-overview",
           "title": "Digital Marketing Overview",
           "description": "The ecosystem of channels and tactics.",
-          "videoUrl": "https://example.com/video/dm-overview",
+          "videoUrl": "https://www.youtube.com/watch?v=nJvt8k8GZ1w",
           "content": [
             "Digital marketing spans search, social, email, content, and paid media. The mix depends on audience, goals, and budget.",
             "A clear value proposition and consistent messaging across channels increases conversion and brand trust."
@@ -238,7 +238,7 @@
           "id": "seo-basics",
           "title": "SEO Basics",
           "description": "Improve discoverability via search.",
-          "videoUrl": "https://example.com/video/seo",
+          "videoUrl": "https://www.youtube.com/watch?v=gmB_TC92I8w",
           "content": [
             "SEO optimizes content and site structure so search engines can crawl and rank pages effectively.",
             "Keyword research, technical health, and quality content are the core pillars."
@@ -253,7 +253,7 @@
           "id": "content-strategy",
           "title": "Content Strategy",
           "description": "Create useful, audience-first content.",
-          "videoUrl": "https://example.com/video/content",
+          "videoUrl": "https://www.youtube.com/watch?v=6_Ms5B2lU8o",
           "content": [
             "Content should address user needs at different funnel stages—awareness, consideration, decision.",
             "Editorial calendars and distribution plans sustain momentum and keep teams aligned."
@@ -268,7 +268,7 @@
           "id": "paid-ads",
           "title": "Paid Advertising",
           "description": "Reach targeted audiences at scale.",
-          "videoUrl": "https://example.com/video/ads",
+          "videoUrl": "https://www.youtube.com/watch?v=V1EA2KXaEy0",
           "content": [
             "Paid campaigns on search and social offer granular targeting and rapid experimentation.",
             "Creative testing and landing page alignment are critical for ROI."
@@ -283,7 +283,7 @@
           "id": "analytics",
           "title": "Analytics & Optimization",
           "description": "Use data to improve outcomes.",
-          "videoUrl": "https://example.com/video/analytics",
+          "videoUrl": "https://www.youtube.com/watch?v=VnZ0RFs5T2E",
           "content": [
             "Analytics tools measure behavior and outcomes. KPIs vary by strategy: CTR, conversion rate, CAC, and LTV are common.",
             "A/B testing iterates toward better performance with evidence."
