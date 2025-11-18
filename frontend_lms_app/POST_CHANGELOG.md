@@ -1,10 +1,6 @@
-feat(a11y): lighter pink for email pill, maintain white text
+feat(ui): email label pill uses light gray background, keep white text
 
-- Adjust --color-email-pill-bg to #E11D48 to harmonize with dashboard pink while preserving AA contrast with white text
+- Set --color-email-pill-bg to #E5E7EB (light gray) per request
 - Scope remains minimal via .badge.info only; pill shape, padding, and size unchanged
-- Logout button variables unchanged
-
-WCAG notes:
-- #E11D48 on white text: passes AA for normal text
-- #F28C38 on white text: passes AA for normal text
-- #B56576 on white text: passes AA for normal text
+- Text color remains white via --color-email-pill-text
+- No other UI elements modified; logout button variables unchanged
