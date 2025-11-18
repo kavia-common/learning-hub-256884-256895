@@ -52,7 +52,7 @@
   --gradient-button-accent: linear-gradient(90deg, #1593D6 0%, #F06BCF 100%);
 
   /* Accessibility tokens for email pill and logout button */
-  --color-email-pill-bg: #4F8A8B; /* default teal blue */
+  --color-email-pill-bg: #4FA8A8; /* soft teal per request */
   --color-email-pill-text: #FFFFFF;
 
   --color-logout-bg: #F28C38; /* warm orange primary */
