@@ -59,6 +59,7 @@
           "id": "version-control",
           "title": "Version Control with Git",
           "description": "Track changes and collaborate using Git.",
+          "videoUrl": "https://www.youtube.com/watch?v=Yc8sCSeMhi4",
           "content": [
             "Git enables teams to manage changes through commits and branches. It supports experimentation without disrupting the main codebase.",
             "Workflows like feature branches and pull requests add structure and facilitate peer review.",
