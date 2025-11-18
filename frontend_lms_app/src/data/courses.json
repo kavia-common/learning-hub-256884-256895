@@ -362,6 +362,15 @@
           "id": "analytics",
           "title": "Analytics & Optimization",
           "description": "Use data to improve outcomes.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "Google Analytics 4 (GA4) for Beginners - Analytics and Optimization",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=eg4I-RU_vKU"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=eg4I-RU_vKU",
           "content": [
             "Analytics tools measure behavior and outcomes. KPIs vary by strategy: CTR, conversion rate, CAC, and LTV are common.",
             "A/B testing iterates toward better performance with evidence."
