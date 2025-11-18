@@ -293,6 +293,15 @@
           "id": "seo-basics",
           "title": "SEO Basics",
           "description": "Improve discoverability via search.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "SEO Basics - Intro to Search Optimization",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch/watch?v=MYE6T_gd7H0"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch/watch?v=MYE6T_gd7H0",
           "content": [
             "SEO optimizes content and site structure so search engines can crawl and rank pages effectively.",
             "Keyword research, technical health, and quality content are the core pillars."
