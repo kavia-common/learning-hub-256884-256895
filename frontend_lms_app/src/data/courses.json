@@ -270,6 +270,15 @@
           "id": "dm-overview",
           "title": "Digital Marketing Overview",
           "description": "The ecosystem of channels and tactics.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "Digital Marketing Overview - Video",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=bixR-KIJKYM"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=bixR-KIJKYM",
           "content": [
             "Digital marketing spans search, social, email, content, and paid media. The mix depends on audience, goals, and budget.",
             "A clear value proposition and consistent messaging across channels increases conversion and brand trust."
