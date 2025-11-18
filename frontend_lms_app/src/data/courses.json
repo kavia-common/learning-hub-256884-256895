@@ -158,6 +158,15 @@
           "id": "search-planning",
           "title": "Search and Planning",
           "description": "Agents that make goal-directed decisions.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "Search and Planning - Video",
+              "provider": "YouTube",
+              "url": "https://www.youtube.com/watch?v=CnqMV_wXcBg"
+            }
+          ],
+          "videoUrl": "https://www.youtube.com/watch?v=CnqMV_wXcBg",
           "content": [
             "Classical AI studied agents that search problem spaces to reach goals. Algorithms such as BFS, DFS, and A* trade off completeness, optimality, and efficiency.",
             "Planning introduces actions with preconditions and effects, allowing agents to sequence steps under constraints."
