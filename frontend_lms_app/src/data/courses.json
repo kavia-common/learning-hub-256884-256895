@@ -75,6 +75,13 @@
           "id": "deploy-basics",
           "title": "Deployment Basics",
           "description": "Get your site live on the internet.",
+          "resources": [
+            {
+              "type": "video",
+              "title": "Deployment Basics - Intro",
+              "url": "https://www.youtube.com/watch?v=nZ3BaTY8c9M"
+            }
+          ],
           "content": [
             "Deployment moves code from a local environment to production. Static sites can be hosted on CDNs for fast global delivery.",
             "Build steps like minification and bundling reduce payload size and improve performance.",
