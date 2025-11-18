@@ -11,7 +11,6 @@
           "id": "html-intro",
           "title": "Introduction to HTML",
           "description": "Understand the structure of web pages.",
-          "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
           "content": [
             "HTML is the standard markup language that structures content on the web. It uses elements such as headings, paragraphs, lists, and links to describe how information is organized.",
             "Each HTML element is represented by tags, often with attributes that provide additional context—like alt text for images. A well-structured HTML document improves accessibility and search engine visibility.",
@@ -27,7 +26,6 @@
           "id": "css-basics",
           "title": "CSS Basics",
           "description": "Style content with cascading style sheets.",
-          "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
           "content": [
             "CSS controls presentation—colors, spacing, and layout. Styles cascade, meaning more specific selectors can override earlier ones.",
             "Modern layout techniques include Flexbox and Grid, which simplify building responsive interfaces across devices.",
@@ -43,7 +41,6 @@
           "id": "js-fundamentals",
           "title": "JavaScript Fundamentals",
           "description": "Make pages interactive with JavaScript.",
-          "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
           "content": [
             "JavaScript adds interactivity and dynamic behavior to web pages. It manipulates the DOM and communicates with servers via APIs.",
             "Key language features include variables, functions, loops, and objects. ES6 introduced let/const, arrow functions, and modules.",
@@ -59,7 +56,6 @@
           "id": "version-control",
           "title": "Version Control with Git",
           "description": "Track changes and collaborate using Git.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Git enables teams to manage changes through commits and branches. It supports experimentation without disrupting the main codebase.",
             "Workflows like feature branches and pull requests add structure and facilitate peer review.",
@@ -75,7 +71,6 @@
           "id": "deploy-basics",
           "title": "Deployment Basics",
           "description": "Get your site live on the internet.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Deployment moves code from a local environment to production. Static sites can be hosted on CDNs for fast global delivery.",
             "Build steps like minification and bundling reduce payload size and improve performance.",
@@ -91,7 +86,6 @@
           "id": "accessibility",
           "title": "Web Accessibility",
           "description": "Design inclusive and accessible experiences.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Accessibility ensures that people with disabilities can use your website. This includes keyboard navigation, screen reader support, and sufficient color contrast.",
             "Semantic HTML and ARIA roles provide structure and meaning to assistive technologies.",
@@ -128,7 +122,6 @@
           "id": "ai-overview",
           "title": "AI Landscape",
           "description": "What AI is and where it’s used.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Artificial Intelligence is a broad field focused on building systems that can perform tasks requiring human intelligence. Examples include vision, speech, recommendation, and decision support.",
             "AI techniques span rule-based systems to machine learning and deep learning. Organizations choose approaches based on data availability and problem complexity."
@@ -143,7 +136,6 @@
           "id": "search-planning",
           "title": "Search and Planning",
           "description": "Agents that make goal-directed decisions.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Classical AI studied agents that search problem spaces to reach goals. Algorithms such as BFS, DFS, and A* trade off completeness, optimality, and efficiency.",
             "Planning introduces actions with preconditions and effects, allowing agents to sequence steps under constraints."
@@ -158,7 +150,6 @@
           "id": "ml-basics",
           "title": "Machine Learning Basics",
           "description": "Learning patterns from data.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Machine Learning models learn patterns from examples. Supervised learning maps inputs to outputs, unsupervised finds structure, and reinforcement learning optimizes behavior.",
             "Key concerns include bias, variance, and generalization. Cross-validation helps estimate model performance on unseen data."
@@ -173,7 +164,6 @@
           "id": "nn-intro",
           "title": "Neural Networks",
           "description": "From perceptrons to deep networks.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Neural networks compose layers of units to approximate complex functions. Backpropagation tunes parameters to reduce loss.",
             "Deep architectures, GPUs, and large datasets enabled breakthroughs in vision and language over the last decade."
@@ -188,7 +178,6 @@
           "id": "ai-ethics",
           "title": "AI Ethics & Responsible AI",
           "description": "Fairness, privacy, and accountability.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Responsible AI seeks to mitigate harm and ensure benefits are distributed equitably. Key areas include fairness, transparency, privacy, and safety.",
             "Governance frameworks, documentation, and human-in-the-loop reviews support responsible deployment."
@@ -223,7 +212,6 @@
           "id": "dm-overview",
           "title": "Digital Marketing Overview",
           "description": "The ecosystem of channels and tactics.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Digital marketing spans search, social, email, content, and paid media. The mix depends on audience, goals, and budget.",
             "A clear value proposition and consistent messaging across channels increases conversion and brand trust."
@@ -238,7 +226,6 @@
           "id": "seo-basics",
           "title": "SEO Basics",
           "description": "Improve discoverability via search.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "SEO optimizes content and site structure so search engines can crawl and rank pages effectively.",
             "Keyword research, technical health, and quality content are the core pillars."
@@ -253,7 +240,6 @@
           "id": "content-strategy",
           "title": "Content Strategy",
           "description": "Create useful, audience-first content.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Content should address user needs at different funnel stages—awareness, consideration, decision.",
             "Editorial calendars and distribution plans sustain momentum and keep teams aligned."
@@ -268,7 +254,6 @@
           "id": "paid-ads",
           "title": "Paid Advertising",
           "description": "Reach targeted audiences at scale.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Paid campaigns on search and social offer granular targeting and rapid experimentation.",
             "Creative testing and landing page alignment are critical for ROI."
@@ -283,7 +268,6 @@
           "id": "analytics",
           "title": "Analytics & Optimization",
           "description": "Use data to improve outcomes.",
-          "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
           "content": [
             "Analytics tools measure behavior and outcomes. KPIs vary by strategy: CTR, conversion rate, CAC, and LTV are common.",
             "A/B testing iterates toward better performance with evidence."
